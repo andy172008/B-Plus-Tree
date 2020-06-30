@@ -1,12 +1,13 @@
 package com.hxy;
 
+import java.io.Serializable;
 import java.util.LinkedList;
 import java.util.List;
 
 //author:SX1916085 贺星宇
 //B+树的节点
 //在这个B+树中，我将Key设为int，Value设为String
-public class BPNode {
+public class BPNode implements Serializable {
     //B+树的阶
     int m;
     //是否为叶节点

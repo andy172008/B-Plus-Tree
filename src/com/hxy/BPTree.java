@@ -1,6 +1,8 @@
 package com.hxy;
 
-public class BPTree {
+import java.io.Serializable;
+
+public class BPTree implements Serializable {
     //B+树的阶
     int m;
     //B+树阶的一半（向上取整），也是节点中key个数的下限
@@ -62,7 +64,7 @@ public class BPTree {
         }
         System.out.print("根节点：");
         for (int i = 0; i < root.keys.size(); i++) {
-            System.out.print("key:" + root.keys.get(i) + " |  ");
+            System.out.print("key:" + root.keys.get(i) + " ");
         }
         System.out.println();
 
